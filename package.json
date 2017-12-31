@@ -2,7 +2,8 @@
   "name": "noraneko-works",
   "private": true,
   "scripts": {
-    "dev": "bin/webpack-dev-server"
+    "dev": "bin/webpack-dev-server",
+    "build": "bin/webpack"
   },
   "dependencies": {
     "@rails/webpacker": "^3.2.0",
