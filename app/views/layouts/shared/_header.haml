@@ -1,0 +1,24 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "UTF-8"}/
+    %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1.0", :name => "viewport"}/
+    %title Cinemaru
+    = csrf_meta_tags
+    = stylesheet_pack_tag 'app'
+    %script{src: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js'}
+    %link{rel:'stylesheet', href:'https://fonts.googleapis.com/icon?family=Material+Icons'}
+    = javascript_pack_tag 'app'
+  %body
+    %header
+      :ruby
+        props = {
+          message: notice,
+          alert: alert || ((defined? devise_message) ? devise_message : nil),
+          user: current_user.try(:as_json_full),
+          authenticityToken: form_authenticity_token
+        }
+    = yield
+    %footer
+      = react_component('Navigation', props: props)

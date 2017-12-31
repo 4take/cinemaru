@@ -1,0 +1,53 @@
+@import "~bootstrap/scss/bootstrap"
+@import "~material-icons/css/material-icons"
+@import "sass/shared/shadow"
+@import "sass/shared/media"
+@import "sass/shared/colors"
+@import "sass/shared/bootstrap-ext"
+@import "sass/components/shared/loading"
+@import "sass/components/shared/divider"
+@import "sass/components/shared/avatar"
+@import "sass/components/shared/tag"
+@import "sass/components/worked"
+
+.image-container
+  @extend .rounded
+  @extend .flex-column
+  @extend .justify-content-center
+  @extend .align-items-center
+  @extend .mh-100
+  @extend .h-100
+  @extend .w-100
+  img
+    max-width: 100%
+    max-height: 100%
+
+img
+  max-width: 100%
+  max-height: 100%
+
+body
+  background-color: black
+
+.pagination
+  @extend .mb-0
+
+.sticky-bottom
+  position: fixed
+  left: 0
+  right: 0
+  bottom: 0
+  background: black
+
+.player-navigation
+  position: fixed
+  bottom: 4px
+  left: 50%
+  transform: translate(-50%, 0%)
+  z-index: 1
+
+.player-navigation-right
+  position: fixed
+  bottom: 4px
+  right: 8px
+  z-index: 1

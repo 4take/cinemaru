@@ -1,0 +1,14 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "UTF-8"}/
+    %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1.0", :name => "viewport"}/
+    %title NoranekoWorks
+    = csrf_meta_tags
+    = stylesheet_pack_tag 'app'
+    %script{src: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js'}
+    = javascript_pack_tag 'app'
+  %body
+    %header
+    = yield
