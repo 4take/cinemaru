@@ -1,13 +1,15 @@
 !!!
 %html
   %head
+    %title Cinemaru
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %meta{:charset => "UTF-8"}/
     %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1.0", :name => "viewport"}/
-    %title Cinemaru
+    %meta{name:'theme-color', content: '#000000'}
+    = analytics_init if Rails.env.production?
+    = display_meta_tags default_meta_tags
     = csrf_meta_tags
     = stylesheet_pack_tag 'app'
-    %script{src: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js'}
     %link{rel:'stylesheet', href:'https://fonts.googleapis.com/icon?family=Material+Icons'}
     = javascript_pack_tag 'app'
   %body

@@ -520,21 +520,24 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="google-api-client (vbundled(0.19.0)) [path][gem]">
+      <library name="google-analytics-rails (vbundled(1.1.1)) [path][gem]">
         <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.4.0/gems/google-api-client-0.19.0/bin" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.4.0/gems/google-api-client-0.19.0/lib" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.4.0/gems/google-api-client-0.19.0/rakelib" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.4.0/gems/google-api-client-0.19.0/samples" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.4.0/gems/google-api-client-0.19.0/generated" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.4.0/gems/google-analytics-rails-1.1.1/lib" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.4.0/gems/google-api-client-0.19.0/bin" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.4.0/gems/google-api-client-0.19.0/lib" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.4.0/gems/google-api-client-0.19.0/rakelib" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.4.0/gems/google-api-client-0.19.0/samples" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.4.0/gems/google-api-client-0.19.0/generated" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.4.0/gems/google-analytics-rails-1.1.1/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="google-api-client (vbundled(0.8.0)) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.4.0/gems/google-api-client-0.8.0/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.4.0/gems/google-api-client-0.8.0/lib" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -769,6 +772,21 @@
         <JAVADOC />
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.4.0/gems/mail-2.7.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="meta-tags (vbundled(2.7.0)) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.4.0/gems/meta-tags-2.7.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.4.0/gems/meta-tags-2.7.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.4.0/gems/meta-tags-2.7.0/certs" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.4.0/gems/meta-tags-2.7.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.4.0/gems/meta-tags-2.7.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.4.0/gems/meta-tags-2.7.0/certs" />
         </SOURCES>
       </library>
     </orderEntry>

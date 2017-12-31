@@ -81,6 +81,11 @@ group :development, :staging do
   gem 'bullet'
 end
 
+gem 'meta-tags'
+
+# google-analytics
+gem 'google-analytics-rails'
+
 # mailer
 gem 'letter_opener'
 gem 'letter_opener_web'

@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: cinemaru_production
+  database: cinemaru
   username: cinemaru
   password: <%= ENV['CINEMARU_DATABASE_PASSWORD'] %>

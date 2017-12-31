@@ -83,7 +83,12 @@ class CinemaruCmp extends BaseComponent<Props, State> {
     showInquiry() {
         this.props.actions.showDialog({content: <div>
             <Layout align="center center" className="mt-3" direction="column">
-                ご意見・ご要望ありましたらこちらまで（別画面へ遷移します。）
+                <h4>
+                    ご意見・ご要望ありましたらこちらまで
+                </h4>
+                <div>
+                    ※ 別画面へ遷移します。
+                </div>
                 <a className="btn btn-dark depth-1 mt-3"
                    href="https://goo.gl/forms/mTQ1yxp6K7PA7MZw2"
                    target="_blank"
@@ -127,9 +132,10 @@ class CinemaruCmp extends BaseComponent<Props, State> {
     get filterElement() {
         return <div className="player-navigation-right">
             <Layout align="center center">
-                <button type="button" className="btn mx-1 py-0 px-1 btn-link white" onClick={()=> this.filter()}>
-                    <i className="mi mi-filter-list mi-36" />
-                </button>
+                {/*TODO: データ整合取り次第開放*/}
+                {/*<button type="button" className="btn mx-1 py-0 px-1 btn-link white" onClick={()=> this.filter()}>*/}
+                    {/*<i className="mi mi-filter-list mi-36" />*/}
+                {/*</button>*/}
                 <button type="button" className="btn mx-1 py-0 px-1 btn-link white" onClick={()=> this.showInquiry()}>
                     <i className="mi mi-mail mi-36" />
                 </button>

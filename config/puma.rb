@@ -1,3 +1,16 @@
+if ['production', 'staging'].include? ENV['RAILS_ENV']
+  _proj_path = "#{File.expand_path("../..", __FILE__)}"
+  _proj_name = File.basename(_proj_path)
+  _home = ENV.fetch("HOME") { "/var/www/rails/cinemaru" }
+
+  pidfile "/var/www/rails/shared/tmp/pids/puma.pid"
+  bind "unix:/var/www/rails/shared/tmp/puma.sock"
+  directory _proj_path
+  stdout_redirect "/var/www/rails/shared/log/puma.stdout.log", "/var/www/rails/shared/log/puma.stderr.log"
+
+  daemonize true
+end
+
 # Puma can serve each request in a thread from an internal thread pool.
 # The `threads` method setting takes two numbers: a minimum and maximum.
 # Any libraries that use thread pools should be configured to match
